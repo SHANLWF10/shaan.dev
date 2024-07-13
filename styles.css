@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Poppins"; */
 }
 
 html,
@@ -18,99 +17,147 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--background);
+    overflow-x: hidden;
 }
 
 
 /* Responsive code for Screens under 680px */
 @media screen and (max-width: 680px) {
     .navbar {
-            width: 250px;
-            height: 100%;
-            padding: 15px;
-            position: relative;
-            position: absolute;
-            left: -250px;
-            top: 0;
-        }
-    
-        .show {
-            left: 0;
-            top: 0;
-        }
-    
-        .links {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-    
-        .links a {
-            text-decoration: none;
-            font-size: 1.5rem;
-            font-family: "Roboto";
-            font-weight: 400;
-            background-color: var(--Primary-Accent);
-            padding: 10px 5px 10px 5px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: var(--text);
-            transition: all 250ms linear;
-        }
-    
-        .links a:hover {
-            transform: translate(10px, -5px);
-            box-shadow: -5px 5px 3px rgb(134, 125, 125);
-        }
-    
-        .span {
-            width: 40px;
-            height: 30px;
-            /* border: 2px solid black; */
-            position: absolute;
-            top: 4px;
-            right: -44px;
-            cursor: pointer;
-        }
-    
-        .span span {
-            width: 100%;
-            height: 6px;
-            border-radius: 5px;
-            background-color: var(--Primary-Accent);
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    
-        .span span:nth-child(2) {
-            top: 50%;
-        }
-    
-        .span span:nth-child(3) {
-            top: 100%;
-        }
-    
-        .span:hover span:nth-child(1) {
-            opacity: 0;
-        }
-    
-        .span:hover span:nth-child(2) {
-            rotate: 45deg;
-        }
-    
-        .span:hover span:nth-child(3) {
-            rotate: -45deg;
-            transform: translate(10px, -10px);
-        }
-        .heroSection {
-            width: 100%;
-            height: 100%;
-            border: 5px solid white;
-        }
+        width: 250px;
+        height: 100%;
+        padding: 15px;
+        position: relative;
+        position: absolute;
+        left: -250px;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .show {
+        left: 0;
+        top: 0;
+    }
+
+    .links {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .links a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: "Roboto";
+        font-weight: 400;
+        background-color: var(--Primary-Accent);
+        padding: 10px 5px 10px 5px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--text);
+        transition: all 250ms linear;
+    }
+
+    .links a:hover {
+        transform: translate(10px, -5px);
+        box-shadow: -5px 5px 3px rgb(134, 125, 125);
+    }
+
+    .span {
+        width: 40px;
+        height: 30px;
+        /* border: 2px solid black; */
+        position: absolute;
+        top: 4px;
+        right: -44px;
+        cursor: pointer;
+    }
+
+    .span span {
+        width: 100%;
+        height: 6px;
+        border-radius: 5px;
+        background-color: var(--Primary-Accent);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .span span:nth-child(2) {
+        top: 50%;
+    }
+
+    .span span:nth-child(3) {
+        top: 100%;
+    }
+
+    .span:hover span:nth-child(1) {
+        opacity: 0;
+    }
+
+    .span:hover span:nth-child(2) {
+        rotate: 45deg;
+    }
+
+    .span:hover span:nth-child(3) {
+        rotate: -45deg;
+        transform: translate(10px, -10px);
+    }
+
+    .heroSection {
+        width: 100%;
+        height: 100%;
+        color: var(--text);
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroSection h1 {
+        font-weight: 500;
+        font-size: 1.6rem;
+        letter-spacing: 0.13rem;
+    }
+
+    .heroSection .text {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .getStarted {
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        font-size: 1rem;
+        background-color: var(--Primary-Accent);
+        color: var(--text);
+        cursor: pointer;
+        box-shadow: -3px 3px #ede8e8;
+        transition: transform ease-in;
+    }
+
+    .getStarted:active {
+        transform: translate(-3px, 3px);
+        box-shadow: none;
+    }
+    .aboutSection {
+        width: 100%;
+        height: 100%;
+        border: 3px solid blue;
+    }
 }
 
 /* Code for screens larger than 680px */
