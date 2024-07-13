@@ -2,10 +2,81 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: "Poppins"; */
 }
 
 html,
 body {
     width: 100%;
     height: 100%;
+}
+.navbar {
+    width: 250px;
+    height: 100%;
+    background-color: #dadada;
+    padding: 15px;
+    position: relative;
+    position: absolute;
+    left: -250px;
+    top: 0;
+}
+.show {
+    left: 0;
+    top: 0;
+}
+.links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.links a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    font-weight: 400;
+    background-color: rgb(18, 18, 40);
+    padding:10px 5px 10px 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.span {
+    width: 40px;
+    height: 30px;
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 4px;
+    right: -44px;
+    cursor: pointer;
+}
+.span span {
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.span span:nth-child(2){
+    top: 50%;
+}
+.span span:nth-child(3){
+    top: 100%;
+}
+
+.span:hover span:nth-child(1){
+    opacity: 0;
+}
+.span:hover span:nth-child(2){
+    rotate: 45deg;
+}
+.span:hover span:nth-child(3){
+    rotate: -45deg;
+    transform: translate(10px, -10px);
 }
