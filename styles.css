@@ -18,8 +18,8 @@ body {
     height: 100%;
     background-color: var(--background);
     overflow-x: hidden;
+    position: relative;
 }
-
 
 /* Responsive code for Screens under 680px */
 @media screen and (max-width: 680px) {
@@ -179,6 +179,7 @@ body {
         grid-template-columns: repeat(auto-fit, 230px);
         grid-template-rows: repeat(auto-fit, 230px);
     }
+
     .workSection .work {
         background-color: var(--Highlights-Links);
         border-radius: 10px;
@@ -186,5 +187,21 @@ body {
 }
 
 
-
 /* Code for screens larger than 680px */
+
+@media screen and (min-width: 680px) {
+    .workSection {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, 230px);
+        grid-template-rows: repeat(auto-fit, 230px);
+        place-content: center;
+    }
+
+    .workSection .work {
+        background-color: var(--Highlights-Links);
+        border-radius: 10px;
+    }
+}
