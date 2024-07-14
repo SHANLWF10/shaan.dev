@@ -153,12 +153,14 @@ body {
         transform: translate(-3px, 3px);
         box-shadow: none;
     }
+
     .aboutSection {
         width: 100%;
         height: 100%;
         color: var(--text);
         font-family: "Poppins", sans-serif;
     }
+
     .image {
         width: 450px;
         height: 450px;
@@ -166,8 +168,23 @@ body {
         /* This picture is only for demo */
         background: url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center;
         background-size: cover;
-        margin-bottom:20px;
+        margin-bottom: 20px;
+    }
+
+    .workSection {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, 230px);
+        grid-template-rows: repeat(auto-fit, 230px);
+    }
+    .workSection .work {
+        background-color: var(--Highlights-Links);
+        border-radius: 10px;
     }
 }
+
+
 
 /* Code for screens larger than 680px */
